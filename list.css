@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1393aa;
+    margin: 5px;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+#bucket-list{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+}
+.struck{
+    text-decoration: line-through;
+    color: gray;
+}
