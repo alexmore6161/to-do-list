@@ -15,9 +15,20 @@
     list.addEventListener("click", function(e) {
       const item = e.target;
 
-      if (item.tagName === "LI") {
+      if (item) {
         item.classList.toggle("struck");
 
+        if (item.classList.contains("struck")) {
+         // add timestamp
+         const time = document.createElement("span");
+         time.classList.add("timestamp");
+         time.textContent = new Date().toLocaleTimeString();
+         item.appendChild(time);
+       } else {
+         // remove timestamp when unclicked
+         const time = item.querySelector(".timestamp");
+         if (time) time.remove();
+       }
         reorder();
       }
     });
